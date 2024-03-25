@@ -4,6 +4,7 @@ const session = require("express-session")
 const app = express();
 app.use(express.urlencoded({ extended: false }))
 
+// middelware
 app.use(
   session({
     secret: "SOMESECRET",
